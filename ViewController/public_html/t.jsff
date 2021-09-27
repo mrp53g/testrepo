@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+
+<af:panelGroupLayout>
+    
+    <af:poll interval="10" id="poll1">
+        <af:clientListener type="poll" method="resetPollInternval" />
+    </af:poll>
+    
+    <div id="app"> </div>
+   
+</af:panelGroupLayout>
+
+</ui:composition>

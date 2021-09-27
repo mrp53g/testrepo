@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="Test1.jsf" id="d1">
+        <af:form id="f1">
+            <af:panelGridLayout id="pgl1">
+                <af:gridRow height="100px" id="gr3">
+                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc2">
+                        <!-- Header -->
+                        <af:panelBox text="Templalte Selectin" id="pb1">
+                            <f:facet name="toolbar"/>
+                            <af:panelGroupLayout layout="vertical">
+                                <af:inputText value="#{pageFlowScope.templateName}" label="Template Name" />
+                                <af:panelGroupLayout layout="horizontal">
+                                    <af:button text="Submit" />
+                                    <af:button text="Clear" />
+                                </af:panelGroupLayout>
+                            </af:panelGroupLayout>
+                        </af:panelBox>
+                    </af:gridCell>
+                </af:gridRow>
+                <af:gridRow height="80%" id="gr2">
+                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc1">
+                        <af:inlineFrame source="http://127.0.0.1:7101/TagcloudEmbeddedInADF-ViewController-context-root/faces/MainPage.jspx" />
+                    </af:gridCell>
+                </af:gridRow>
+                <af:gridRow height="50px" id="gr1">
+                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc3">
+                       <af:button text="Cancel" />
+                    </af:gridCell>
+                </af:gridRow>
+            </af:panelGridLayout>
+        </af:form>
+    </af:document>
+</f:view>
